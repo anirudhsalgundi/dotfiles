@@ -1,0 +1,32 @@
+# Theme
+theme = GitHub-Dark-Dimmed
+
+# Font settings
+font-family = Source Code Pro
+font-style = medium
+font-size = 18
+# Cursor style - updated for hollow red box
+cursor-style = block
+cursor-style-blink = true
+cursor-color = #ff3333
+#cursor-text = background
+# Alternative yellow cursor: cursor-color = ffcc00
+
+# Window appearance
+window-decoration = true
+window-padding-balance = true
+background-opacity = 0.95
+background-blur-radius = 15
+
+# macOS-specific appearance
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+macos-option-as-alt = true
+
+# Shell integration (use your shell here, e.g., zsh or bash)
+shell-integration = zsh
+shell-integration-features = no-cursor
+
+# Keyboard shortcuts
+keybind = cmd+r=reload_config
+
