@@ -1,0 +1,83 @@
+# Simple, clean Starship config with GitHub Dark theme colors
+
+# Main prompt format
+format = """
+$os\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$conda\
+$time\
+$line_break\
+$character"""
+
+# Right prompt format
+right_format = """
+$conda\
+$time
+"""
+
+# Add a blank line between prompts
+add_newline = true
+
+# OS module for Mac icon
+[os]
+format = " \uf179"
+style = "bold #6e5494"  # GitHub purple
+disabled = false
+
+[os.symbols]
+Macos = ""
+
+# Directory module with folder icon
+[directory]
+format = " \uf07c [$path]($style)  "
+style = "bold #6cb6ff"  # GitHub blue
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = ""
+
+# Git branch module
+[git_branch]
+format = " \ue725 [$branch]($style) "
+style = "bold #7ee787"  # GitHub green
+ 
+# Git status module
+[git_status]
+format = '([\[$all_status, $ahead_behind\]]($style) )'
+style = "bold #f69d50"  # GitHub orange
+conflicted = "\uf41f"  # Explosion icon
+ahead = "${count}-ahead"  # Up arrow
+behind = "${count}-behind"  # Down arrow
+diverged = "\uf7a1 \uf176 ${ahead_count}\uf175 ${behind_count}"  # Split arrows
+untracked = "${count}-untracked"  # Question mark in circle
+stashed = "\uf01c"  # Inbox icon
+modified = "${count}-modified, "  # Pencil icon
+staged = "${count}-staged"  # Plus icon
+renamed = "${count}-renamed"  # Format icon
+deleted = "\uf1f8"  # Trash icon
+
+# Fill module for spacing between left and right
+[fill]
+symbol = " "
+style = "#768390"  # GitHub gray
+
+# Conda environment module
+[conda]
+format = " \ue73c [$environment]($style) "
+style = "bold #dcbdfb"  # GitHub purple/pink
+ignore_base = false
+
+# Time module
+[time]
+format = " \uf017 [$time]($style) "
+style = "bold #f69d50"  # GitHub orange
+disabled = false
+time_format = "%H:%M"
+
+# Character module for prompt symbol
+[character]
+success_symbol = "[➜](bold #7ee787)"  # GitHub green
+error_symbol = "[➜](bold #f47067)"  # GitHub red
+

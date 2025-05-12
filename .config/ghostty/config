@@ -2,9 +2,9 @@
 theme = GitHub-Dark-Dimmed
 
 # Font settings
-font-family = Source Code Pro
+font-family = JetBrainsMono Nerd Font
 font-style = medium
-font-size = 18
+font-size = 20
 # Cursor style - updated for hollow red box
 cursor-style = block
 cursor-style-blink = true
@@ -17,7 +17,8 @@ window-decoration = true
 window-padding-balance = true
 background-opacity = 0.95
 background-blur-radius = 15
-
+window-width = 110
+window-height = 30
 # macOS-specific appearance
 macos-titlebar-style = tabs
 macos-titlebar-proxy-icon = hidden
