@@ -1,6 +1,5 @@
 # Simple, clean Starship config with GitHub Dark theme colors
-
-# Main prompt format
+# Main prompt format (without line break)
 format = """
 $os\
 $directory\
@@ -13,17 +12,18 @@ $line_break\
 $character"""
 
 # Right prompt format
-right_format = """
-$conda\
-$time
-"""
+#right_format = """
+#$conda\
+#$time
+#"""
+
 
 # Add a blank line between prompts
 add_newline = true
 
 # OS module for Mac icon
 [os]
-format = " \uf179"
+format = "\uf179"
 style = "bold #6e5494"  # GitHub purple
 disabled = false
 
