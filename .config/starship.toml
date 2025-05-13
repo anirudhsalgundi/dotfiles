@@ -45,19 +45,35 @@ style = "bold #7ee787"  # GitHub green
  
 # Git status module
 [git_status]
-format = '([\[$all_status, $ahead_behind\]]($style) )'
-style = "bold #f69d50"  # GitHub orange
-conflicted = "\uf41f"  # Explosion icon
-ahead = "${count}-ahead"  # Up arrow
-behind = "${count}-behind"  # Down arrow
-diverged = "\uf7a1 \uf176 ${ahead_count}\uf175 ${behind_count}"  # Split arrows
-untracked = "${count}-untracked"  # Question mark in circle
-stashed = "\uf01c"  # Inbox icon
-modified = "${count}-modified, "  # Pencil icon
-staged = "${count}-staged"  # Plus icon
-renamed = "${count}-renamed"  # Format icon
-deleted = "\uf1f8"  # Trash icon
+#format = '([\[$all_status$ahead_behind\]]($style) )'
+#style = "bold #f69d50"  # GitHub orange
+#conflicted = "\uf41f, "  # Explosion icon
+#ahead = "${count}-ahead, "  # Up arrow
+#behind = "${count}-behind, "  # Down arrow
+#diverged = "\uf7a1 \uf176 ${ahead_count}\uf175 ${behind_count}, "  # Split arrows
+#untracked = "${count}-untracked, "  # Question mark in circle
+#stashed = "\uf01c, "  # Inbox icon
+#modified = "${count}-modified, "  # Pencil icon
+#staged = "${count}-staged, "  # Plus icon
+#renamed = "${count}-renamed, "  # Format icon
+#deleted = "\uf1f8, "  # Trash icon
+# Individual status formats without commas
 
+#[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "bold #f69d50"
+conflicted = "\uf41f, "
+ahead = "${count}-ahead, "
+behind = "${count}-behind, "
+diverged = "\uf7a1 \uf176 ${ahead_count}\uf175 ${behind_count}, "
+untracked = "${count}-untracked, "
+stashed = "\uf01c, "
+modified = "${count}-modified, "
+staged = "${count}-staged, "
+renamed = "${count}-renamed, "
+deleted = "\uf1f8"  # No comma on the last one
+
+# Define how they're joined
 # Fill module for spacing between left and right
 [fill]
 symbol = " "

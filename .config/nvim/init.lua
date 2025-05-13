@@ -142,9 +142,9 @@ require('lazy').setup({
 })
 
 -- Key mappings for copy/paste
-vim.keymap.set('v', '<C-c>', '"+y', { noremap = true, silent = true })
-vim.keymap.set('n', '<C-v>', '"+p', { noremap = true, silent = true })
-vim.keymap.set('i', '<C-v>', '<C-r>+', { noremap = true, silent = true })
+vim.keymap.set('v', '<D-c>', '"+y', { noremap = true, silent = true })
+vim.keymap.set('n', '<D-v>', '"+p', { noremap = true, silent = true })
+vim.keymap.set('i', '<D-v>', '<C-r>+', { noremap = true, silent = true })
 
 -- Additional syntax highlighting enhancements
 vim.api.nvim_create_autocmd("FileType", {
