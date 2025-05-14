@@ -1,44 +1,47 @@
-unrecognized_file: "#adbac7"
-recognized_file: "#6cb6ff"
-dir: "#768390"
-executable_file: "#f69d50"
-symlink: "#dcbdfb"
-dead_symlink: "#f47067"
-socket: "#6cb6ff"
-blockdev: "#f69d50"
-chardev: "#f69d50"
-fifo: "#6cb6ff"
-door: "#dcbdfb"
-broken: "#f47067"
+# File types
+unrecognized_file: "#adbac7"  # Light gray - neutral for unrecognized files
+recognized_file: "#6cb6ff"    # Bright blue - standard recognized files
+dir: "#c297ff"                # Vibrant purple - directories stand out
+executable_file: "#f69d50"    # Orange - executable files
+symlink: "#39d353"            # Bright green - symbolic links
+dead_symlink: "#f47067"       # Red - broken links
+socket: "#58a6ff"             # Medium blue - sockets
+blockdev: "#ff9e64"           # Light orange - block devices
+chardev: "#ff7eb6"            # Pink - character devices
+fifo: "#7ee787"               # Mint green - FIFOs
+door: "#bb9af7"               # Soft purple - doors
+broken: "#f47067"             # Red - broken items
 
-user: "#f69d50"
-group: "#dcbdfb"
-permissions: "#6cb6ff"
-exec: "#8ddb8c"
+# User/permissions
+user: "#ff9e64"               # Light orange - user
+group: "#c297ff"              # Vibrant purple - group
+permissions: "#58a6ff"        # Medium blue - permissions
+exec: "#7ee787"               # Mint green - executable permissions
 
-date: "#f69d50"
-hour_old: "#f69d50"
-day_old: "#8ddb8c"
-older: "#6cb6ff"
+# Date
+date: "#ff9e64"               # Light orange - date
+hour_old: "#ffb86c"           # Warm orange - recent files
+day_old: "#7ee787"            # Mint green - day old files
+older: "#58a6ff"              # Medium blue - older files
 
-text: "#adbac7"
-archive: "#f69d50"
-audio: "#dcbdfb"
-image: "#6cb6ff"
-video: "#f47067"
-pdf: "#f69d50"
-document: "#6cb6ff"
-database: "#f69d50"
-code: "#8ddb8c"
-xml: "#dcbdfb"
-json: "#dcbdfb"
-csv: "#dcbdfb"
-spreadsheet: "#f69d50"
-presentation: "#f47067"
-notebook: "#f47067"
-shell: "#8ddb8c"
-python: "#f69d50"
-ruby: "#dcbdfb"
-perl: "#dcbdfb"
-executable: "#8ddb8c"
-
+# File categories
+text: "#adbac7"               # Light gray - text files
+archive: "#ff9e64"            # Light orange - archives
+audio: "#c297ff"              # Vibrant purple - audio files
+image: "#0dc9c9"              # Teal - image files
+video: "#ff7eb6"              # Pink - video files
+pdf: "#ff9e64"                # Light orange - PDF files
+document: "#58a6ff"           # Medium blue - documents
+database: "#ff9e64"           # Light orange - databases
+code: "#7ee787"               # Mint green - code files
+xml: "#bb9af7"                # Soft purple - XML files
+json: "#c297ff"               # Vibrant purple - JSON files
+csv: "#9ccfd8"                # Pale blue - CSV files
+spreadsheet: "#ff9e64"        # Light orange - spreadsheets
+presentation: "#ff7eb6"       # Pink - presentations
+notebook: "#f47067"           # Red - notebooks
+shell: "#7ee787"              # Mint green - shell scripts
+python: "#ffb86c"             # Warm orange - Python files
+ruby: "#bb9af7"               # Soft purple - Ruby files
+perl: "#9ccfd8"               # Pale blue - Perl files
+executable: "#7ee787"         # Mint green - executable files

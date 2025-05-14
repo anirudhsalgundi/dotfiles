@@ -23,7 +23,8 @@ add_newline = true
 
 # OS module for Mac icon
 [os]
-format = "\uf179"
+#format = "~> \uf179 <~"
+format = "󱍢 󰉛 "
 style = "bold #6e5494"  # GitHub purple
 disabled = false
 
@@ -94,6 +95,7 @@ time_format = "%H:%M"
 
 # Character module for prompt symbol
 [character]
-success_symbol = "[➜](bold #7ee787)"  # GitHub green
-error_symbol = "[➜](bold #f47067)"  # GitHub red
-
+#success_symbol = "[➜](bold #7ee787)"  # GitHub green
+#error_symbol = "[➜](bold #f47067)"  # GitHub red
+success_symbol = "[󱞪 ](bold #7ee787)"
+error_symbol = "[󱓇 ](bold #f47067)"

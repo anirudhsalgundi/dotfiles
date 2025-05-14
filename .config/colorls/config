@@ -1,2 +1,8 @@
 dark_colors:
-  path: ~/.config/colorls/dark-colors.yaml
+  path: ~/.config/colorls/dark_colors.yaml
+
+files:
+  path: ~/.config/colorls/files.yaml
+
+folders:
+  path: ~/.config/colorls/folders.yaml

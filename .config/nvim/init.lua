@@ -96,10 +96,40 @@ require('lazy').setup({
           },
         }
       })
-      vim.cmd('colorscheme github_dark_dimmed')
+      vim.cmd('colorscheme github_dark_default')
     end
   },
-  
+--   -- GitHub theme with enhanced syntax highlighting
+-- {
+--   'projekt0n/github-nvim-theme',
+--   priority = 1000,  -- Load theme early
+--   config = function()
+--     require('github-theme').setup({
+--       options = {
+--         -- Theme options
+--         transparent = false,
+--         terminal_colors = true,
+--         styles = {
+--           comments = 'italic',
+--           keywords = 'bold',
+--           types = 'italic,bold',
+--           functions = 'bold',
+--           strings = 'NONE',
+--           variables = 'NONE',
+--         },
+--         darken = {
+--           sidebars = {
+--             enable = true,
+--           },
+--           floats = true,
+--         },
+--       }
+--     })
+--     vim.cmd('colorscheme github_dark_default')
+--   end
+-- },
+
+
   -- Better highlighting for function arguments
   {
     'm-demare/hlargs.nvim',
