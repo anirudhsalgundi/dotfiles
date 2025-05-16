@@ -6,7 +6,7 @@ theme = GitHub Dark
 # Font settings
 font-family = JetBrainsMono Nerd Font
 font-style = medium
-font-size = 20
+font-size = 18
 # Cursor style - updated for hollow red box
 cursor-style = block
 cursor-style-blink = true
@@ -32,4 +32,3 @@ shell-integration-features = no-cursor
 
 # Keyboard shortcuts
 keybind = cmd+r=reload_config
-

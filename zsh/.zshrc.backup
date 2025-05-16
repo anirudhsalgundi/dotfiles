@@ -1,0 +1,39 @@
+export LANG=en_US.UTF-8
+alias editrc="vim ~/.zshrc"
+alias reload="source ~/.zshrc"
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ani/softwares/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/ani/softwares/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/ani/softwares/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ani/softwares/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+export HEADAS="/Users/ani/softwares/heasoft/heasoft-6.35.1/aarch64-apple-darwin24.3.0"
+source $HEADAS/headas-init.sh
+
+export LAXPCSOFT="/Users/ani/softwares/LAXPC_softwares/LAXPCsoftware22Aug15"
+export LAXPCPATH="$LAXPCSOFT/LAXPC_CAL/"
+export PATH="$PATH:$LAXPCSOFT/laxpc_bin"
+
+#laxPyc aliases
+alias laxpyc_quick_look="python /Users/ani/work/xray-binaries/codes/laxPyc/quick-results/reduce_and_get_lc.py"
+
+#other aliases
+alias copy="rsync -rzvruP"
+alias laxpc_pc="ssh -X laxpc@10.112.106.40"
+alias utkarsh_pc="ssh -X utkarsh@10.112.106.39"
+
+
+export PATH="/usr/local/texlive/2025basic/texmf-dist/scripts:$PATH"
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
