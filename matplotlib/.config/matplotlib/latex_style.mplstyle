@@ -1,4 +1,4 @@
-figure.figsize: 9, 6
+figure.figsize: 4, 3
 axes.labelsize: 22
 axes.titlesize: 24
 axes.titlepad: 15
