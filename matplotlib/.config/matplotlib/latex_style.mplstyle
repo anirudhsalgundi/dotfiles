@@ -1,0 +1,25 @@
+figure.figsize: 9, 6
+axes.labelsize: 22
+axes.titlesize: 24
+axes.titlepad: 15
+figure.titlesize: 24
+axes.labelpad: 10
+font.size: 16
+legend.fontsize: 18
+xtick.labelsize: 16
+ytick.labelsize: 16
+text.usetex: True
+font.family: serif
+xtick.minor.visible: True
+ytick.minor.visible: True
+xtick.top: True
+ytick.left: True
+ytick.right: True
+xtick.direction: out
+ytick.direction: out
+xtick.minor.size: 2.5
+xtick.major.size: 5
+ytick.minor.size: 2.5
+ytick.major.size: 5
+axes.axisbelow: True
+figure.dpi: 200
