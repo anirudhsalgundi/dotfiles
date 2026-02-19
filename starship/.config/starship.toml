@@ -7,6 +7,7 @@ $git_branch\
 $git_status\
 $fill\
 $conda\
+$python\
 $time\
 $line_break\
 $character"""
@@ -24,8 +25,9 @@ add_newline = true
 # OS module for Mac icon
 [os]
 #format = "~> \uf179 <~"
-format = "󱍢 󰉛 "
-style = "bold #6e5494"  # GitHub purple
+format = "󱍢  "
+style = "bold white"
+#style = "bold #6e5494"  # GitHub purple
 disabled = false
 
 [os.symbols]
@@ -81,10 +83,19 @@ symbol = " "
 style = "#768390"  # GitHub gray
 
 # Conda environment module
-[conda]
-format = " \ue73c [$environment]($style) "
-style = "bold #dcbdfb"  # GitHub purple/pink
-ignore_base = false
+#[conda]
+#format = " \ue73c [$environment]($style) "
+#style = "bold #dcbdfb"  # GitHub purple/pink
+#ignore_base = false
+
+[python]
+# Using the Sun symbol (unicode ☀️)
+symbol = "☀️ " 
+#format = " [${symbol}${pyenv_prefix}(\\($virtualenv\\))]($style) "
+format = " [${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\))]($style) "
+style = "bold yellow"
+pyenv_prefix = "venv "
+python_binary = ["python", "python3"]
 
 # Time module
 [time]
