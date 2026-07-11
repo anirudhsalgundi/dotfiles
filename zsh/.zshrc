@@ -33,7 +33,7 @@ export PATH="$PATH:$LAXPCSOFT/laxpc_bin"
 
 # HEADAS setup
 export HEADAS="/Users/ani/softwares/heasoft/heasoft-6.35.1/aarch64-apple-darwin24.3.0"
-source $HEADAS/headas-init.sh
+[ -f "$HEADAS/headas-init.sh" ] && source "$HEADAS/headas-init.sh"
 
 # TeXLive path
 export PATH="/usr/local/texlive/2025basic/texmf-dist/scripts:$PATH"
@@ -73,7 +73,7 @@ DISABLE_UPDATE_PROMPT="true"
 eval "$(starship init zsh)"
 
 # Source exa colors
-[ -f "$HOME/dotfiles/.config/shell/exa_colors.sh" ] && source "$HOME/dotfiles/.config/shell/exa_colors.sh"
+[ -f "$HOME/.config/shell/exa_colors.sh" ] && source "$HOME/.config/shell/exa_colors.sh"
 
 #for terminal to work properly during remote sessions
 export TERM=xterm-256color
