@@ -1,7 +1,7 @@
 term = xterm-256color
 
 # Theme
-theme = GitHub Dark
+theme = GitHub-Dark-Dimmed
 
 # Font settings
 font-family = JetBrainsMono Nerd Font
